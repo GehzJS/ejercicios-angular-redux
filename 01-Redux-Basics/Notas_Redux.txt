@@ -1,0 +1,35 @@
+/*///////////////////////////////////////////////////////////////////////////*/
+/*                          REDUX EN ANGULAR    */
+/*///////////////////////////////////////////////////////////////////////////*/
+
+/*===========================================================================*/
+/*  ACTIONS    */
+/*===========================================================================*/
+    -   Son la única fuente de información que se envía por interacciones del 
+        usuario o de la aplicación.
+    -   Deben de ser lo más simples posible.
+    -   Cuentan con sólo dos propiedades:
+        -   Type: es la acción que debe realizar.
+        -   Payload: es la información que se envía para realizar una tarea.
+
+/*===========================================================================*/
+/*  REDUCERS    */
+/*===========================================================================*/
+    -   Son funciones que reciben dos argumentos:
+        -   OldState: Es el estado actual de la aplicación.
+        -   Action: Es un objeto que indica que hay que hacer.
+
+/*===========================================================================*/
+/*  STATE    */
+/*===========================================================================*/
+    -   Es información de sólo lectura.
+    -   No se cambia su valor de forma directa.
+    -   No se permiten métodos de JS que manipulen el State directamente.
+
+/*===========================================================================*/
+/*  STORE    */
+/*===========================================================================*/
+    -   Contiene el estado actual de la aplicación.
+    -   Permite la lectura del estado a través del método getState().
+    -   Permite la creación de un nuevo estado por el método dispatch(Action).
+    -   Permite notificar los cambios de estado a través de subscribe().
