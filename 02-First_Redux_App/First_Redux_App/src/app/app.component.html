@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <div class="row text-center">
+        <div class="col">
+          <h1>Contador</h1>
+          <h2>{{ contador | async }}</h2>
+          <button (click)="incrementar()" class="btn btn-success mx-1">
+            Incrementar
+          </button>
+          <button (click)="decrementar()" class="btn btn-danger mx-1">
+            Decrementar
+          </button>
+        </div>
+      </div>
+      <div class="row text-center mt-5">
+        <div class="col">
+          <app-hijo></app-hijo>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
